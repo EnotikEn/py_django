@@ -1,0 +1,22 @@
+### DELETE course with id
+DELETE http://127.0.0.1:8000/api/v1/courses/2/
+Authorization: ApiKey admintest:JKHGkjfsh34ui5y234089fhsdajklgfhJKHKJ#!Q
+
+
+### POST new course
+POST http://127.0.0.1:8000/api/v1/courses/
+Authorization: ApiKey admintest:JKHGkjfsh34ui5y234089fhsdajklgfhJKHKJ#!Q
+Content-Type: application/json
+
+{
+    "title": "Learn DevOps principal practice",
+    "price": 5.99,
+    "students_qty": 4232,
+    "reviews_qty": 2653,
+    "category_id": 2
+}
+
+
+### GET all courses
+GET http://127.0.0.1:8000/api/v1/courses/
+Content-Type: application/json

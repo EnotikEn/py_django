@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{ course.title }}
+{% endblock %}
+
+{% block content %}
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <h1 class="mt-5">{{ course.title }}</h1>
+      <h5>{{ course.category }}</h5>
+      <button class="btn btn-primary">Buy</button>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Welcome ! The price of this course is {{ course.price }} dollars... The number of students is {{ course.students_qty }}
+    </figcaption>
+  </figure>
+{% endblock %}
